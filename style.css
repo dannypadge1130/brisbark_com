@@ -8,11 +8,11 @@
 }
 .banner
 {
-	/*background-color: #341F48;*/
-	background: -moz-linear-gradient(left, #341F48 50%, #2b193c 50%);
+	background-color: #503932;
+	/*background: -moz-linear-gradient(left, #341F48 50%, #2b193c 50%);
 	background: -webkit-linear-gradient(left, #341F48 50%, #2b193c 50%);
 	background: -o-linear-gradient(left, #341F48 50%, #2b193c 50%);
-	background: linear-gradient(left, #341F48 50%, #2b193c 50%);
+	background: linear-gradient(left, #341F48 50%, #2b193c 50%);*/
 }
 
 .banner-text 
@@ -141,7 +141,7 @@
 .menubar
 {
 	margin-bottom: 0px !important;
-	background-color: #3EC9C3;
+	background-color: #472D23;
 	border: none !important;
 	border-radius: 0px !important;
 	z-index: 2;
@@ -167,7 +167,7 @@
 }
 .navstyle li a:hover, .navstyle li a:focus, .navstyle li a.active
 {
-	background-color: #33a29d !important;
+	background-color: #E28767 !important;
 	color: #fff;
 }
 
