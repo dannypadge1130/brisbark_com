@@ -146,23 +146,6 @@
     })  
 
   });
-
-  $(function(){
-    $('#galleryimg').mixItUp();
-  });
-
-  jQuery(function ($) {
-  // custom formatting example
-    $('.timer').data('countToOptions', {
-      formatter: function (value, options) {
-        return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-      }
-  });
- 
-      // start all the timers
-  $('#gallery').waypoint(function() {
-    $('.timer').each(count);
-	});
  
   function count(options) {
     var $this = $(this);
@@ -170,62 +153,37 @@
       $this.countTo(options);
     }
   });
-	
-	
-	$('.quotes').quovolver({
-    equalHeight   : true
-  });
 
 </script>
 
 <script type="text/javascript">
 
 	$(document).ready(function () {
-
-		$(document).on("scroll", onScroll);
+    
+    $(document).on("scroll", onScroll);
     $('a[href^="#"]').on('click', function (e) {
 
-		e.preventDefault();
+		  e.preventDefault();
 
-		$(document).off("scroll");
+		  $(document).off("scroll");
 
-    $('a').each(function () {
-      $(this).removeClass('active');
-	   })
+      $('a').each(function () {
+        $(this).removeClass('active');
+	    })
 
-		$(this).addClass('active');
+		  $(this).addClass('active');
 
-		var target = this.hash;
-    $target = $(target);
+		  var target = this.hash;
+      $target = $(target);
 
-		$('html, body').stop().animate({
-
-		  'scrollTop': $target.offset().top
-
-			}, 500, 'swing', function () {
-
-			 window.location.hash = target;
-
-			 $(document).on("scroll", onScroll);
+		  $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+			  $(document).on("scroll", onScroll);
+	    });
 
 	   });
-
-		});
-
-    /*$.ajax({
-      type: 'GET',
-        url: 'http://www.etsy.com/shop/brisbark/rss',
-        dataType: 'xml',
-        success: function (xml) {
-          $(xml).find("item").each(function () {
-            var title = $(this).find("title").text();
-            var description = $(this).find("description").text();
-            var linkUrl = $(this).find("link_url").text();
-            var link = "<a href='" + linkUrl + "' target='_blank'>Buy Now<a>";
-            $('#feedContainer').append('<div class="product"><h3 class="title">'+title+'</h3><p class="desc">'+description+link+'</p>'+"<a href='" + linkUrl + "' target='_blank'>Buy Now<a>");
-          });
-        }
-      });*/
 	});
  
 
