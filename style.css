@@ -20,6 +20,18 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+.banner-text img {
+	width: 280px;
+}
+
+@media screen and (min-width: 480px) {
+	.banner-text img {
+		width: 458px;
+	}
+}
+
+
 .arrow
 {
     text-align: center;
@@ -196,14 +208,28 @@
 
 
 /*------------------------------------------/
-/-----------------Features------------------/
+/-----------------Shop----------------------/
 /------------------------------------------*/
 
-.features
+.shop
 {
 	padding: 100px 0px 100px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
+
+.shop img {
+	width:25%;
+	margin-left: 38%;
+}
+
+
+@media screen and (min-width: 480px) {
+	.shop img {
+		margin-left: 0px;
+	}
+}
+
+
 .feature-icons
 {
 	width: 12%;
@@ -618,7 +644,6 @@ figure.effect-Beauty:hover p {
 }
 .social li a
 {
-	color: #fff;
 	font-size: 35px;
 	line-height: 0px !important;
 }
